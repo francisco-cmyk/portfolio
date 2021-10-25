@@ -1,0 +1,22 @@
+@mixin flexContainer($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-outter-container {
+  width: 100vw;
+  height: 100vh;
+  @include flexContainer(column);
+  justify-content: flex-end;
+  align-items: center;
+
+  .home-inner-container {
+    @include flexContainer(column);
+    justify-content: flex-start;
+    width: 60%;
+    height: 100%;
+    background-color: gray;
+  }
+}
