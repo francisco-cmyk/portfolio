@@ -1,5 +1,32 @@
 @import "./src/styles/home.scss";
+@import "./src/styles/navbar.scss";
 
-html {
-  background-color: white
+@mixin flexContainer($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  font-family: Avenir Next;
+}
+
+.index-container {
+  @include flexContainer(column);
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #2b2c2c;
+}
+
+.index-navbar-container {
+  width: 100%;
+}
+
+.index-page-container {
+  margin-top: 0.5em;
+  width: 100%;
 }

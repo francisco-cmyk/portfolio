@@ -1,0 +1,33 @@
+@mixin flexContainer($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-outter-container {
+  @include flexContainer(row);
+  justify-content: flex-end;
+  padding: 2em;
+  width: 100%;
+  height: 70px;
+  border: 1px solid red;
+  font-family: avenir;
+}
+
+.navbar-inner-container {
+  @include flexContainer(row);
+  justify-content: space-evenly;
+  width: 60%;
+}
+
+.navbar-link {
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+  font-family: avenir;
+  transition: ease-in 0.2s;
+  &:hover {
+    color: rgb(121, 121, 121);
+  }
+}

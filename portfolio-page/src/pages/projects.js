@@ -5,14 +5,14 @@ import * as React from "react"
 // import Layout from "../components/layout"
 // import Seo from "../components/seo"
 
-function AboutMe() {
+function Projects() {
   return (
-    <div className="AboutMe-outter-container">
-    <div className="AboutMe-inner-container">
-      AboutMe
+    <div className="Projects-outter-container">
+    <div className="Projects-inner-container">
+      Projects
     </div>
   </div>
   )
 }
 
-export default AboutMe
+export default Projects
