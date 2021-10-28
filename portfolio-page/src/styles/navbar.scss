@@ -11,8 +11,11 @@
   padding: 2em;
   width: 100%;
   height: 70px;
-  border: 1px solid red;
+  // border: 1px solid red;
   font-family: avenir;
+  &:hover {
+    box-shadow: 3px 25px 31px -26px rgb(107, 107, 107);
+  }
 }
 
 .navbar-inner-container {
@@ -27,6 +30,7 @@
   text-decoration: none;
   font-family: avenir;
   transition: ease-in 0.2s;
+  background: transparent;
   &:hover {
     color: rgb(121, 121, 121);
   }
