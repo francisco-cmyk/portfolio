@@ -11,7 +11,7 @@
   padding-left: 2.5em;
   padding-right: 2.5em;
   // border: 1px solid red;
-  width: auto;
+  width: 90%;
   height: auto;
   @media all and (max-width: 3500px) {
     margin-left: 0;
@@ -81,6 +81,7 @@
 }
 
 .home-title {
+  font-size: 2.3em;
   @media all and (max-width: 490px) {
     font-size: 1.7em;
   }

@@ -6,36 +6,17 @@
 }
 
 .index-container {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  width: 100%;
   background-color: #131313;
-  background: linear-gradient(309deg, rgba(15,15,15,1) 27%, rgba(32,32,32,1) 50%, rgb(29, 29, 29) 67%);
-  background-size: 210% 210%;
-  animation: colorful 20s ease-in-out infinite;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  // display: grid;
+  // grid-template-rows: auto 1fr auto;
 }
 
-@keyframes colorful {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-}
-
-.index-navbar-container {
+section {
+  @include flexContainer(column);
   width: 100%;
-}
-
-.index-footer-container {
-  width: 100%;
-}
-
-.index-page-container {
-  // margin-top: 0.5em;
-  width: 100%;
+  height: 100vh;
 }

@@ -6,12 +6,13 @@
 }
 
 .Footer-outter-container {
-  @include flexContainer(row);
+  @include flexContainer(column);
   justify-content: center;
-  padding: 0.1em;
   width: 100%;
   height: 50px;
-  // border: 1px solid red;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
   font-family: avenir;
   @media all and (max-width: 2030px) {
     margin-top: 4em;
@@ -33,31 +34,13 @@
     height: 100%;
     width: 100%;
   }
-
-  // #linkedin {
-  //   color: rgb(149, 149, 190);
-  //   &:hover {
-  //     color: rgb(202, 201, 201);
-  //   }
-  // }
-  // #github {
-  //   color: rgb(130, 192, 133);
-  //   &:hover {
-  //     color: rgb(202, 201, 201);
-  //   }
-  // }
-  // #email {
-  //   color: rgb(158, 184, 182);
-  //   &:hover {
-  //     color: rgb(202, 201, 201);
-  //   }
-  // }
 }
 
 .Footer-inner-container {
   @include flexContainer(row);
   justify-content: space-evenly;
-  width: 30%;
+  padding-bottom: 0.5em;
+  width: 25%;
   @media all and (max-width: 820px) {
     width: 80%;
   }
