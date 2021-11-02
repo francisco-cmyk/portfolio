@@ -1,0 +1,120 @@
+@mixin flexContainer($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutMe-outter-container {
+  @include flexContainer(column);
+  justify-content: center;
+  width: 99%;
+  height: 100%;
+  font-family: avenir;
+  // border: 1px solid red;
+  .AboutMe-inner-container {
+    @include flexContainer(row);
+    justify-content: space-evenly;
+    width: 80%;
+    height: 100%;
+
+    .AboutMe-text-box {
+      color: white;
+      // border: 1px solid red;
+      width: 75%;
+      height: auto;
+    }
+
+    .AboutMe-bio {
+      font-size: 1.5em;
+      line-height: 2em;
+      padding: 0.4em;
+      text-align: center;
+    }
+
+    .tech-stack {
+      width: 100%;
+      height: 100%;
+      font-size: 1.4em;
+      padding-bottom: 1em;
+      @include flexContainer(column);
+      justify-content: space-evenly;
+      align-items: flex-end;
+      .tech-line-break {
+        width: 70%;
+        height: 1px;
+        margin: 0;
+        color: rgb(201, 201, 201);
+      }
+      .tech-title {
+        letter-spacing: 0.2em;
+      }
+      .tech-list {
+        @include flexContainer(column);
+        justify-content: space-evenly;
+        align-items: flex-end;
+        .tech-div {
+          padding-top: 0.4em;
+        }
+      }
+    }
+
+    .IconGrid-container {
+      width: 55%;
+      height: 55%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 40%;
+      grid-row-gap: 20%;
+      .grid-div {
+        @include flexContainer(row);
+        justify-content: center;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        &:hover {
+          box-shadow: 2px 2px 17px -2px rgb(160, 160, 160);
+          background-color: rgb(122, 68, 176);
+          outline-style: solid rgb(157, 157, 157);
+        }
+      }
+      .grid-icon {
+        color: white;
+        font-size: 4em;
+      }
+    }
+
+    .AboutMe-content-box {
+      @include flexContainer(column);
+      justify-content: center;
+      width: 80%;
+      height: auto;
+    }
+
+    .AboutMe-content-box > img {
+      width: 55%;
+      height: 55%;
+      border-radius: 15px;
+    }
+  }
+
+  .dot-buttons {
+    width: 100%;
+    margin-bottom: 3em;
+    @include flexContainer(row);
+    justify-content: space-evenly;
+    .dot {
+      border: none;
+      color: rgb(105, 210, 233);
+      background-color: transparent;
+      .dots-icons {
+        font-size: 3em;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+}

@@ -7,7 +7,7 @@ import "aos/dist/aos.css"
 
 function Footer() {
   useEffect(() => {
-    Aos.init({ duration: 2000, easing: 'ease-in' });
+    Aos.init({ duration: 400, easing: 'ease-in' });
     Aos.refresh();
   }, []);
   return (
@@ -15,20 +15,23 @@ function Footer() {
       <div className="Footer-inner-container">
         <div className="Footer-icon-div">
           <a href="https://www.linkedin.com/in/fveranicola" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin data-aos="fade-up" data-aos-delay="1600" id='linkedin' className="Footer-icon-logo"></FaLinkedin>
+          <FaLinkedin data-aos="fade-up" data-aos-delay="400" id='linkedin' className="Footer-icon-logo"></FaLinkedin>
           </a>
         </div>
         <div className="Footer-icon-div" >
           <a href="https://github.com/francisco-cmyk" target="_blank" rel="noopener noreferrer">
-          <FaGithubSquare data-aos="fade-up" data-aos-delay="1600" id="github" className="Footer-icon-logo"></FaGithubSquare>
+          <FaGithubSquare data-aos="fade-up" data-aos-delay="400" id="github" className="Footer-icon-logo"></FaGithubSquare>
           </a>
         </div>
         <div className="Footer-icon-div">
           <a href="mailto: fveranicola@gmail.com" target="_blank" rel="noopener noreferrer">
-          <FaEnvelope data-aos="fade-up" data-aos-delay="1600" id="email" className="Footer-icon-logo"></FaEnvelope>
+          <FaEnvelope data-aos="fade-up" data-aos-delay="400" id="email" className="Footer-icon-logo"></FaEnvelope>
           </a>
         </div>
       </div>
+      {/* <div>
+        <p>Francisco Vera Nicola | { new Date().getFullYear} | Built with passion.</p>
+      </div> */}
     </div>
   )
 };
