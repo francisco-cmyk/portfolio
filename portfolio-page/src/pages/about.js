@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { FaUserCircle, FaFileCode } from "react-icons/fa"
 import IconGrid from "../components/IconGrid.js"
+import photo from "../../src/images/me.jpg"
 
 function AboutMe() {
   const [showBtns, setBtns] = useState(true);
@@ -21,7 +22,7 @@ function AboutMe() {
               <p className="AboutMe-bio">I am a full stack engineer from Providence, Rhode Island. I have a passion for creativity and problem solving. Although this shines through in the front-end, my skill set is diverse and applicable to back-end and fullstack.</p>
             </div>
             <div className="AboutMe-image-container">
-              <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="blank person" />
+              <img src={photo} alt="blank person" />
             </div>
             </div>
           </div> : null}

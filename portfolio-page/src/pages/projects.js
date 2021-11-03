@@ -6,60 +6,53 @@ function Projects() {
        <h2 className="projects-title">Portfolio</h2>
       <div className="Projects-inner-container">
         <div className="projects-grid-container">
-        <div className="projects-grid-box">
-          <div className="grid-box-pic">
-            Picture
+        <button onClick={event =>  window.open('https://github.com/Pinch-Co', '_blank')} className="projects-grid-box">
+          <div id="pinch" className="grid-box-pic">
           </div>
           <div className="grid-box-text">
             <p className="grid-box-title">Pinch</p>
             <p className="grid-box-bio">Personal Finance Web App</p>
           </div>
-        </div>
-        <div className="projects-grid-box">
-          <div className="grid-box-pic">
-            Picture
+        </button>
+        <button onClick={event =>  window.open('https://github.com/francisco-cmyk/Palisade-Fashion', '_blank')} className="projects-grid-box">
+          <div id="palisade" className="grid-box-pic">
           </div>
           <div className="grid-box-text">
             <p className="grid-box-title">Palisade Fashion</p>
             <p className="grid-box-bio">Ecommerce Single Page App</p>
           </div>
-        </div>
-        <div className="projects-grid-box">
-          <div className="grid-box-pic">
-            Picture
+        </button>
+        <button onClick={event =>  window.open('https://github.com/Team-Caliche', '_blank')} className="projects-grid-box">
+          <div id="caliche" className="grid-box-pic">
           </div>
           <div className="grid-box-text">
             <p className="grid-box-title">Caliche System</p>
             <p className="grid-box-bio">System Design</p>
           </div>
-        </div>
-        <div className="projects-grid-box">
-          <div className="grid-box-pic">
-            Picture
+        </button>
+        <button onClick={event =>  window.open('https://github.com/Kauri-2021/Surfinch', '_blank')} className="projects-grid-box">
+          <div id="Surfinch" className="grid-box-pic">
           </div>
           <div className="grid-box-text">
             <p className="grid-box-title">Surfinch</p>
             <p className="grid-box-bio">Bird Watcher Web App</p>
           </div>
-        </div>
-        <div className="projects-grid-box">
-          <div className="grid-box-pic">
-            Picture
-          </div>
+        </button>
+        <button onClick={event =>  window.open('https://github.com/francisco-cmyk/Rubicon-Football', '_blank')} className="projects-grid-box">
+          <div id="Rubicon" className="grid-box-pic" />
           <div className="grid-box-text">
             <p className="grid-box-title">Rubicon Football</p>
             <p className="grid-box-bio">Side Project: Sports App</p>
           </div>
-        </div>
-        <div className="projects-grid-box">
-          <div className="grid-box-pic">
-            Picture
+        </button>
+        <button className="projects-grid-box">
+          <div id="comingSoon" className="grid-box-pic">
           </div>
           <div className="grid-box-text">
             <p className="grid-box-title">Coming Soon...</p>
             <p className="grid-box-bio">Should be Fun!</p>
           </div>
-        </div>
+        </button>
         </div>
       </div>
     </div>

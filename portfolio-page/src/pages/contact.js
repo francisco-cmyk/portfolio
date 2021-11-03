@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import moment from 'moment'
 import { FaLinkedin, FaGithubSquare, FaEnvelope, FaFile } from "react-icons/fa"
 import { useStaticQuery, graphql } from "gatsby"

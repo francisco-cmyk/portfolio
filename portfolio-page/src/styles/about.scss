@@ -77,7 +77,7 @@ section#about {
       .AboutMe-image-container > img {
         width: 70%;
         height: 80%;
-        border-radius: 20px;
+        border-radius: 15px;
         @media all and (max-width: 1000px) {
           width: 65%;
         }
@@ -162,8 +162,8 @@ section#about {
           @media all and (max-width: 550px) {
             letter-spacing: 0;
             text-align: center;
-            width: 100%;
-            font-size: 1.4em;
+            width: 90%;
+            font-size: 1.1em;
           }
         }
         .tech-list {
@@ -218,6 +218,7 @@ section#about {
           height: auto;
           border-radius: 10px;
           outline: rgb(69, 69, 69) solid 2px;
+          background-color: rgb(58, 58, 58);
           width: 200px;
           height: 70px;
           @media all and (max-width: 800px) {
@@ -234,16 +235,14 @@ section#about {
           }
           &:hover {
             box-shadow: 2px 2px 17px -2px rgb(26, 26, 26);
-            background-color: rgb(58, 58, 58);
+            background-color: transparent;
             color: white;
           }
         }
         .grid-icon {
           color: rgb(65, 65, 65);
+          color: white;
           font-size: 4em;
-          &:hover {
-            color: white;
-          }
         }
       }
     }
