@@ -43,7 +43,6 @@ function Layout({ children }) {
           content="https://i.imgur.com/Gh58r7f.png"
         />
         <title>Francisco Vera Porfolio</title>
-        <link rel="canonical" href="http://mysite.com/example" />
         <link rel="icon" href="https://i.pinimg.com/600x315/d2/a4/7b/d2a47bc6021db28067a973c9901d2b65.jpg" />
       </Helmet>
       <Navbar />
