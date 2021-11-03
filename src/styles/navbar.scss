@@ -1,0 +1,91 @@
+@mixin flexContainer($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-outter-container {
+  @include flexContainer(row);
+  justify-content: flex-end;
+  position: fixed;
+  height: auto;
+  width: 98%;
+  top: 0;
+  z-index: 1;
+  padding: 2em;
+  margin: 0;
+  background-color: #212121;
+  font-family: avenir;
+  &:hover {
+    box-shadow: 3px 25px 31px -26px rgb(107, 107, 107);
+  }
+  // @media all and (max-width: 3000px) {
+  //   widows: 95%;
+  // }
+  // @media all and (max-width: 1700px) {
+  //   widows: 90%;
+  // }
+  // @media all and (max-width: 820px) {
+  //   justify-content: center;
+  //   padding: 1em;
+  // }
+  // @media all and (max-width: 250px) {
+  //   @include flexContainer(column);
+  //   height: 100%;
+  //   width: 100%;
+  // }
+}
+
+.navbar-inner-container {
+  @include flexContainer(row);
+  justify-content: space-evenly;
+  width: 60%;
+  @media all and (max-width: 820px) {
+    width: 80%;
+  }
+  @media all and (max-width: 650px) {
+    width: 90%;
+  }
+  @media all and (max-width: 550px) {
+    width: 95%;
+  }
+  @media all and (max-width: 500px) {
+    width: 100%;
+    padding-right: 1em;
+  }
+  @media all and (max-width: 390px) {
+    width: 100%;
+    padding-right: 1em;
+
+  }
+  @media all and (max-width: 250px) {
+    @include flexContainer(column);
+    height: 100%;
+    width: 100%;
+    padding-right: 1em;
+
+  }
+}
+
+.navbar-link {
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+  font-family: avenir;
+  transition: ease-in 0.3s;
+  background: transparent;
+  &:hover {
+    color: rgb(121, 121, 121);
+    text-decoration: underline;
+  }
+  @media all and (max-width: 3000px) {
+    font-size: 2em;
+  }
+  @media all and (max-width: 2000px) {
+    font-size: 1.5em;
+  }
+  @media all and (max-width: 438px) {
+    font-size: 0.8em;
+  }
+}

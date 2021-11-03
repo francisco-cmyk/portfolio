@@ -1,0 +1,167 @@
+@mixin flexContainer($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container {
+  @include flexContainer(row);
+  justify-content: flex-start;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  // border: 1px solid red;
+  width: 90%;
+  height: auto;
+  @media all and (max-width: 3500px) {
+    margin-left: 0;
+    padding-left: 7em;
+    padding-right: 7em;
+    padding-top: 1em;
+  }
+  @media all and (max-width: 2500px) {
+    margin-left: 0;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 1em;
+  }
+  @media all and (max-width: 490px) {
+    margin-left: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 2em;
+  }
+  @media all and (max-width: 360px) {
+    margin-left: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+  }
+  @media all and (max-width: 330px) {
+    margin-left: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+  }
+}
+
+.home-text-container {
+  color: white;
+  font-family: avenir;
+  padding: 3em;
+  margin-left: 5em;
+  @media all and (max-width: 3500px) {
+    padding-top: 1.5em;
+  }
+  @media all and (max-width: 2500px) {
+    padding-top: 1.5em;
+  }
+  @media all and (max-width: 1700px) {
+    padding-top: 1em;
+  }
+  @media all and (max-width: 820px) {
+    margin-left: 3em;
+  }
+  @media all and (max-width: 720px) {
+    margin-left: 2em;
+  }
+  @media all and (max-width: 640px) {
+    margin-left: 1em;
+  }
+  @media all and (max-width: 590px) {
+    margin-left: 0.5em;
+  }
+  @media all and (max-width: 550px) {
+    margin-left: 0.1em;
+  }
+  @media all and (max-width: 490px) {
+    margin-left: 0;
+    padding: 1em;
+  }
+}
+
+.home-title {
+  font-size: 2.3em;
+  @media all and (max-width: 490px) {
+    font-size: 1.7em;
+  }
+  @media all and (max-width: 440px) {
+    margin-left: 1.5em;
+  }
+  @media all and (max-width: 400px) {
+    margin-left: 0.5em;
+  }
+}
+
+.home-title-sub {
+  @media all and (max-width: 490px) {
+    font-size: 1.2em;
+  }
+  @media all and (max-width: 440px) {
+    margin-left: 2em;
+  }
+  @media all and (max-width: 400px) {
+    margin-left: 0.5em;
+  }
+}
+
+.home-list-icon-container {
+  @include flexContainer(row);
+  justify-content: space-between;
+}
+
+.home-text-list {
+  padding: 0.5em;
+  @media all and (max-width: 440px) {
+    width: 50%;
+  }
+}
+
+.home-ul {
+  height: 100%;
+  list-style-type: none;
+  @media all and (max-width: 440px) {
+    padding: 0;
+  }
+}
+
+.home-li {
+  padding: 0.6em;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
+
+.home-icon-container {
+  @include flexContainer(column);
+  justify-content: flex-start;
+  width: 40%;
+  height: 300px;
+  padding-top: 2.5em;
+  // border: 1px solid red;
+
+  .home-icon-minis {
+    padding: 0.7em;
+  }
+
+  .home-icons {
+    color: white;
+    font-size: 2em;
+    &:hover {
+      color: rgb(160, 161, 161);
+    }
+  }
+
+  #soccer {
+    color: rgb(54, 151, 231);
+  }
+  #code {
+    color: rgb(61, 228, 130);
+  }
+  #soc {
+    color: rgb(231, 187, 66);
+  }
+  #brush {
+    color: rgb(231, 73, 184);
+  }
+}

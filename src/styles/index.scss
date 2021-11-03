@@ -1,0 +1,21 @@
+@import "./src/styles/layout.scss";
+@import "./src/styles/home.scss";
+@import "./src/styles/navbar.scss";
+@import "./src/styles/footer.scss";
+@import "./src/styles/about.scss";
+@import "./src/styles/projects.scss";
+@import "./src/styles/contact.scss";
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: avenir;
+  background-color: #131313;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
