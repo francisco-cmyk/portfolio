@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "francisco-vera-portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Personal Portfolio Site",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Francisco Vera Nicola",
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.16",
     "aos": "^2.3.4",
