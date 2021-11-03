@@ -16,7 +16,6 @@ function Contact({ children }) {
     }
   }
 `)
-console.log(data);
   return (
     <div className="Contact-outter-container">
       <div className="Contact-inner-container">

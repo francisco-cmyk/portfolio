@@ -88,6 +88,9 @@
   @media all and (max-width: 440px) {
     margin-left: 1.5em;
   }
+  @media all and (max-width: 400px) {
+    margin-left: 0.5em;
+  }
 }
 
 .home-title-sub {
@@ -96,6 +99,9 @@
   }
   @media all and (max-width: 440px) {
     margin-left: 2em;
+  }
+  @media all and (max-width: 400px) {
+    margin-left: 0.5em;
   }
 }
 
@@ -106,11 +112,17 @@
 
 .home-text-list {
   padding: 0.5em;
+  @media all and (max-width: 440px) {
+    width: 50%;
+  }
 }
 
 .home-ul {
   height: 100%;
   list-style-type: none;
+  @media all and (max-width: 440px) {
+    padding: 0;
+  }
 }
 
 .home-li {
