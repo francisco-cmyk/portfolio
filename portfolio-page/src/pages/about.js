@@ -19,7 +19,7 @@ function AboutMe() {
           {showText ? <div className="AboutMe-content-one">
             <div className="AboutMe-inner-content">
             <div className="AboutMe-bio-container">
-              <p className="AboutMe-bio">I am a full stack engineer from Providence, Rhode Island. I have a passion for creativity and problem solving. Although this shines through in the front-end, my skill set is diverse and applicable to back-end and fullstack.</p>
+              <p className="AboutMe-bio">I am a full stack engineer from Providence, Rhode Island. I have a passion for creativity and problem solving. Although this shines through in the front-end, my skill set is diverse and applicable to back-end and fullstack. I am currently open to opportunities - feel free to reach out!</p>
             </div>
             <div className="AboutMe-image-container">
               <img src={photo} alt="blank person" />
@@ -50,11 +50,11 @@ function AboutMe() {
       <div className="dot-buttons">
         {showBtns ? <button onClick={event => handleChange()} className="dot">
           <FaUserCircle className="dots-icons" />
-          <p>Switch</p>
+          <p>Switch to Tech Stack</p>
         </button> : null}
         {!showBtns ? <button onClick={event => handleChange()} className="dot">
           <FaFileCode id="codeFile" className="dots-icons" />
-          <p>Switch</p>
+          <p>Switch to Bio</p>
         </button> : null}
       </div>
     </div>
@@ -62,3 +62,6 @@ function AboutMe() {
 }
 
 export default AboutMe
+
+
+// "I", "am", "a", "full", "stack", "engineer", "from", "Providence,", "Rhode", "Island.", "I", "have", "a", "passion", "for", "creativity", "and", "problem", "solving.", "Although", "this", "shines", "through", "in","the", "front-end,", "my", "skill", "set", "is", "diverse", "and", "applicable", "to", "back-end", "and", "fullstack."

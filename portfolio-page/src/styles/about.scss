@@ -54,12 +54,23 @@ section#about {
         height: 50%;
         margin-top: 1em;
         padding: 2.5em;
+        @media all and (max-width: 3500px) {
+          margin-top: 8em;
+        }
+        @media all and (max-width: 2500px) {
+          margin-top: 6em;
+        }
+        @media all and (max-width: 1800px) {
+          margin-top: 2em;
+        }
 
         .AboutMe-bio {
           font-size: 1.5em;
           line-height: 1.5em;
           padding: 0.4em;
           text-align: center;
+          // outline: rgb(60, 60, 60) solid 2px;
+          color: rgb(53, 53, 53);
           @media all and (max-width: 650px) {
             text-align: left;
             font-size: 1em;
@@ -75,9 +86,11 @@ section#about {
       }
 
       .AboutMe-image-container > img {
-        width: 70%;
-        height: 80%;
-        border-radius: 15px;
+        width: 65%;
+        height: 76%;
+        border-radius: 50%;
+        border: 1px solid white;
+        object-fit: cover;
         @media all and (max-width: 1000px) {
           width: 65%;
         }
@@ -87,17 +100,18 @@ section#about {
         @media all and (max-width: 850px) {
           width: 80%;
         }
-        @media all and (max-width: 850px) {
+        @media all and (max-width: 750px) {
           height: 50%;
-          width: 60%;
+          width: 67%;
         }
         @media all and (max-width: 710px) {
-          height: 40%;
-          width: 60%;
+          height: 50%;
+          width: 67%;
         }
-        @media all and (max-width: 600px) {
+        @media all and (max-width: 650px) {
           height: 30%;
-          width: 50%;
+          width: 40%;
+          border-radius: 10%;
         }
       }
     }
