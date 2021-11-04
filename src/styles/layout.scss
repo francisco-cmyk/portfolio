@@ -12,9 +12,12 @@
   overflow-y: scroll;
   scroll-behavior: smooth;
   @media all and (max-width: 450px) {
-    overflow-y: scroll; /* has to be scroll, not auto */
+    overflow-y: scroll;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
+    ::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 

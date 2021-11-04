@@ -5257,7 +5257,10 @@ function Layout({
     charSet: "utf-8"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
     name: "viewport",
-    content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no target-densitydpi=device-dpi"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
+    name: "viewport",
+    content: "minimum-scale=1"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
     name: "description",
     content: "Welcome to my personal page! I am a software engineer who likes to create cool and interesting things"
