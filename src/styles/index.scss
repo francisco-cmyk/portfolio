@@ -18,9 +18,4 @@ body {
   ::-webkit-scrollbar {
     display: none;
   }
-  @media all and (max-width: 450px) {
-    overflow-y: scroll; /* has to be scroll, not auto */
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-  }
 }
