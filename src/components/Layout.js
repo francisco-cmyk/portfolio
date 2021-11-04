@@ -31,8 +31,9 @@ function Layout({ children }) {
         <meta charSet="utf-8" />
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no target-densitydpi=device-dpi"
         />
+        <meta name="viewport" content="minimum-scale=1"/>
         <meta
           name="description"
           content="Welcome to my personal page! I am a software engineer who likes to create cool and interesting things"

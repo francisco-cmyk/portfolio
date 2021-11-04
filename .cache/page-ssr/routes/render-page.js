@@ -3130,13 +3130,13 @@ var plugins = [{
     "start_url": "/",
     "background_color": "#663399",
     "display": "minimal-ui",
-    "icon": "src/images/gatsby-icon.png",
+    "icon": "src/images/FVN.png",
     "legacy": true,
     "theme_color_in_head": true,
     "cache_busting_mode": "query",
     "crossOrigin": "anonymous",
     "include_favicon": true,
-    "cacheDigest": "4a9773549091c227cd2eb82ccd9c5e3a"
+    "cacheDigest": "666ece215920ccc3a98eceae411c88ab"
   }
 }];
 /* global plugins */
@@ -5218,6 +5218,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_projects__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/projects */ "./src/pages/projects.js");
 /* harmony import */ var _pages_contact__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pages/contact */ "./src/pages/contact.js");
 /* harmony import */ var _pages_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../pages/index.js */ "./src/pages/index.js");
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/es/Helmet.js");
+
 
 
 
@@ -5251,7 +5253,22 @@ function Layout({
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "index-container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar_js__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_7__.Helmet, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
+    charSet: "utf-8"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
+    name: "viewport",
+    content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
+    name: "description",
+    content: "Welcome to my personal page! I am a software engineer who likes to create cool and interesting things"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
+    name: "image",
+    property: "og:image",
+    content: "https://i.imgur.com/Gh58r7f.png"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title", null, "Francisco Vera Porfolio"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("link", {
+    rel: "icon",
+    href: "https://i.pinimg.com/600x315/d2/a4/7b/d2a47bc6021db28067a973c9901d2b65.jpg"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar_js__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "home"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_index_js__WEBPACK_IMPORTED_MODULE_6__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "about"
