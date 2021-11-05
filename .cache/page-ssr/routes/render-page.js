@@ -3130,13 +3130,13 @@ var plugins = [{
     "start_url": "/",
     "background_color": "#663399",
     "display": "minimal-ui",
-    "icon": "src/images/FVN.png",
+    "icon": "src/images/FVNwhite.png",
     "legacy": true,
     "theme_color_in_head": true,
     "cache_busting_mode": "query",
     "crossOrigin": "anonymous",
     "include_favicon": true,
-    "cacheDigest": "666ece215920ccc3a98eceae411c88ab"
+    "cacheDigest": "03691614851e9bbece1b549229a7b742"
   }
 }];
 /* global plugins */
@@ -5257,10 +5257,7 @@ function Layout({
     charSet: "utf-8"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
     name: "viewport",
-    content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no target-densitydpi=device-dpi"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
-    name: "viewport",
-    content: "minimum-scale=1"
+    content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
     name: "description",
     content: "Welcome to my personal page! I am a software engineer who likes to create cool and interesting things"
@@ -5403,17 +5400,25 @@ function AboutMe() {
     className: "tech-div"
   }, "Javascript"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "tech-div"
+  }, "Typescript"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "tech-div"
   }, "React"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "tech-div"
-  }, "HTML5 | CSS3 | Sass"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "HTML5"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "tech-div"
+  }, "CSS3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "tech-div"
+  }, "Sass"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "tech-div"
   }, "Nodejs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "tech-div"
+  }, "Graphql"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "tech-div"
   }, "Express"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "tech-div"
-  }, "Postgresql | MongoDB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "Postgresql"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "tech-div"
-  }, "Graphql"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "MongoDB"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "AboutMe-IconGrind-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_IconGrid_js__WEBPACK_IMPORTED_MODULE_1__["default"], null)))) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "dot-buttons"

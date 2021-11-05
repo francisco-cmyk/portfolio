@@ -33,12 +33,16 @@ function AboutMe() {
                 <hr className="tech-line-break" />
                 <div className='tech-list'>
                   <div className="tech-div">Javascript</div>
+                  <div className="tech-div">Typescript</div>
                   <div className="tech-div">React</div>
-                  <div className="tech-div">HTML5 | CSS3 | Sass</div>
+                  <div className="tech-div">HTML5</div>
+                  <div className="tech-div">CSS3</div>
+                  <div className="tech-div">Sass</div>
                   <div className="tech-div">Nodejs</div>
-                  <div className="tech-div">Express</div>
-                  <div className="tech-div">Postgresql | MongoDB</div>
                   <div className="tech-div">Graphql</div>
+                  <div className="tech-div">Express</div>
+                  <div className="tech-div">Postgresql</div>
+                  <div className="tech-div">MongoDB</div>
                 </div>
             </div>
             <div className="AboutMe-IconGrind-container">

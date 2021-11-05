@@ -29,7 +29,7 @@ function Index({ children }) {
               </div>
               <div className="home-icon-minis">
                 <FaFutbol data-aos="fade-right" data-aos-delay="2400" id="soccer" className="home-icons"></FaFutbol>
-              </div>
+              </div> 
             </div>
           </div>
         </div>

@@ -127,9 +127,9 @@ section#about {
 
     .AboutMe-content-two {
       @include flexContainer(row);
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
-      width: 76%;
+      width: 75%;
       height: auto;
 
       .AboutMe-techStack-inner {
@@ -137,7 +137,7 @@ section#about {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
-        grid-column-gap: 1%;
+        grid-column-gap: 5%;
         grid-row-gap: 0px;
         width: 100%;
         @media all and (max-width: 1000px) {
@@ -158,7 +158,7 @@ section#about {
       }
 
       .tech-stack {
-        width: 70%;
+        width: 85%;
         height: 100%;
         font-size: 1.4em;
         padding-bottom: 1em;
@@ -176,7 +176,7 @@ section#about {
           align-items: flex-start;
         }
         .tech-line-break {
-          width: 70%;
+          width: 100%;
           height: 1px;
           margin: 0;
           color: rgb(40, 40, 40);
@@ -185,6 +185,8 @@ section#about {
           }
         }
         .tech-title {
+          width: 100%;
+          text-align: center;
           letter-spacing: 0.1em;
           margin: 0em;
           @media all and (max-width: 1100px) {
@@ -195,15 +197,19 @@ section#about {
           }
           @media all and (max-width: 550px) {
             letter-spacing: 0;
-            text-align: center;
-            width: 100%;
             font-size: 1.1em;
           }
         }
         .tech-list {
           @include flexContainer(column);
-          justify-content: space-evenly;
-          align-items: flex-end;
+          // justify-content: space-evenly;
+          // align-items: flex-end;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+          grid-column-gap: 10%;
+          grid-row-gap: 20%;
+          width: 100%;
           @media all and (max-width: 900px) {
             align-items: flex-start;
           }
@@ -217,6 +223,7 @@ section#about {
           }
           .tech-div {
             padding-top: 0.4em;
+            text-align: center;
             @media all and (max-width: 550px) {
               font-size: 0.9em;
             }
