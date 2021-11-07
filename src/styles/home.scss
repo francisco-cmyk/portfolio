@@ -5,6 +5,14 @@
   align-items: center;
 }
 
+section#home {
+  @media all and (max-width: 450px) {
+    @include flexContainer(column);
+    justify-content: flex-start;
+    margin-top: 5em;
+  }
+}
+
 .home-container {
   @include flexContainer(row);
   justify-content: flex-start;
