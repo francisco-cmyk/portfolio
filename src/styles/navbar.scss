@@ -20,9 +20,9 @@
   &:hover {
     box-shadow: 3px 25px 31px -26px rgb(107, 107, 107);
   }
-  // @media all and (max-width: 3000px) {
-  //   widows: 95%;
-  // }
+  @media all and (max-width: 440px) {
+    padding: 1em;
+  }
   // @media all and (max-width: 1700px) {
   //   widows: 90%;
   // }
@@ -54,12 +54,20 @@
     width: 100%;
     padding-right: 1em;
   }
+  @media all and (max-width: 440px) {
+    display: none;
+    // @include flexContainer(column);
+    // border: 1px solid red;
+    // width: 100%;
+    // padding-right: 1em;
+  }
   @media all and (max-width: 390px) {
+    display: none;
     width: 100%;
     padding-right: 1em;
-
   }
   @media all and (max-width: 250px) {
+    display: none;
     @include flexContainer(column);
     height: 100%;
     width: 100%;
@@ -85,7 +93,36 @@
   @media all and (max-width: 2000px) {
     font-size: 1.5em;
   }
-  @media all and (max-width: 438px) {
+  @media all and (max-width: 440px) {
     font-size: 0.8em;
+  }
+}
+
+.mobile-navbar-icon {
+  display: none;
+
+  @media all and (max-width: 440px) {
+    @include flexContainer(column);
+    align-items: flex-start;
+    width: 100%;
+    color: white;
+    font-size: 1.4em;
+  }
+
+  .mobile-nav-links-container {
+    @include flexContainer(column);
+    width: 100%;
+
+    .mobile-link {
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-size: 0.7em;
+      padding: 0.5em;
+      &:hover {
+        background-color: rgb(116, 116, 116);
+      }
+    }
   }
 }

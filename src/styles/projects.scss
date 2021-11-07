@@ -21,6 +21,10 @@ section#projects {
     padding: 2em;
     margin-top: 4em;
     text-align: left;
+    @media all and (max-width: 440px) {
+      padding: 0.5em;
+      margin-top: 4em;
+    }
   }
 
   .Projects-inner-container {
