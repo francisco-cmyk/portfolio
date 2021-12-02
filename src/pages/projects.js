@@ -6,7 +6,7 @@ function Projects() {
        <h2 className="projects-title">Portfolio</h2>
       <div className="Projects-inner-container">
         <div className="projects-grid-container">
-        <button onClick={event =>  window.open('https://github.com/Pinch-Co', '_blank')} className="projects-grid-box">
+        <button onClick={event =>  window.open('https://github.com/Pinch-Co/Pinch', '_blank')} className="projects-grid-box">
           <div id="pinch" className="grid-box-pic">
           </div>
           <div className="grid-box-text">
