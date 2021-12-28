@@ -14,6 +14,14 @@ function Projects() {
             <p className="grid-box-bio">Personal Finance Web App</p>
           </div>
         </button>
+        <button onClick={event =>  window.open('https://munchhunt.netlify.app/', '_blank')} className="projects-grid-box">
+          <div id="munchHunt" className="grid-box-pic">
+          </div>
+          <div className="grid-box-text">
+            <p className="grid-box-title">Munch Hunt</p>
+            <p className="grid-box-bio">Restaurant Picker (Web App)</p>
+          </div>
+        </button>
         <button onClick={event =>  window.open('https://github.com/francisco-cmyk/Palisade-Fashion', '_blank')} className="projects-grid-box">
           <div id="palisade" className="grid-box-pic">
           </div>
@@ -43,14 +51,6 @@ function Projects() {
           <div className="grid-box-text">
             <p className="grid-box-title">Rubicon Football</p>
             <p className="grid-box-bio">Side Project: Sports App</p>
-          </div>
-        </button>
-        <button className="projects-grid-box">
-          <div id="comingSoon" className="grid-box-pic">
-          </div>
-          <div className="grid-box-text">
-            <p className="grid-box-title">Coming Soon...</p>
-            <p className="grid-box-bio">Should be Fun!</p>
           </div>
         </button>
         </div>
