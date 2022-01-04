@@ -99,8 +99,9 @@ section#projects {
           margin-left: 1em;
         }
         &:hover {
-          box-shadow: 2px 2px 17px -2px rgb(24, 24, 24);
-          outline: rgb(150, 150, 150) solid 2px;
+          // box-shadow: 2px 2px 17px -2px rgb(24, 24, 24);
+          box-shadow: 0 0 8px #767676;
+          outline: rgb(150, 150, 150) solid 1px;
         }
         .grid-box-pic {
           // border: 1px solid red;
