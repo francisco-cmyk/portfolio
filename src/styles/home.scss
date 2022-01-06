@@ -129,8 +129,8 @@ section#home {
 
 .home-text-list {
   padding: 0.5em;
-  @media all and (max-width: 440px) {
-    width: 50%;
+  @media all and (max-width: 540px) {
+    width: 53%;
   }
 }
 
@@ -147,6 +147,9 @@ section#home {
   margin-bottom: 0.5em;
   font-size: 1.2em;
   letter-spacing: 0.1em;
+  @media all and (max-width: 650px) {
+    text-align: right;
+  }
 }
 
 .home-icon-container {
@@ -156,6 +159,10 @@ section#home {
   height: 300px;
   padding-top: 2.5em;
   // border: 1px solid red;
+  @media all and (max-width: 650px) {
+    align-items: flex-start;
+    width: 36%;
+  }
 
   .home-icon-minis {
     padding: 0.7em;

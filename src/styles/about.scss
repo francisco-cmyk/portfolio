@@ -22,7 +22,7 @@ section#about {
 
   @media all and (max-width: 450px) {
     @include flexContainer(column);
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 4em;
   }
   // border: 1px solid red;
@@ -30,11 +30,15 @@ section#about {
     @include flexContainer(column);
     justify-content: center;
     width: 100%;
-    height: auto;
+    height: 600px;
+
+    @media all and (max-width: 650px) {
+      width: 90%;
+    }
 
     .AboutMe-content-one {
-      @include flexContainer(row);
-      justify-content: center;
+      @include flexContainer(column);
+      justify-content: space-evenly;
       align-items: center;
       width: 76%;
       height: auto;
@@ -54,6 +58,8 @@ section#about {
         grid-column-gap: 1%;
         grid-row-gap: 0px;
         width: 100%;
+        background-color: #565656;
+        border-radius: 10px;
         @media all and (max-width: 650px) {
           @include flexContainer(column);
           justify-content: center;
@@ -61,7 +67,7 @@ section#about {
       }
       .AboutMe-bio-container {
         width: 80%;
-        height: 50%;
+        height: 65%;
         margin-top: 1em;
         padding: 2.5em;
         @media all and (max-width: 3500px) {
@@ -79,6 +85,9 @@ section#about {
         @media all and (max-width: 700px) {
           margin-top: 0.5em;
         }
+        @media all and (max-width: 650px) {
+          padding: 0.9em;
+        }
         @media all and (max-width: 400px) {
           margin-top: 0em;
         }
@@ -88,11 +97,13 @@ section#about {
           line-height: 1.5em;
           padding: 0.4em;
           text-align: center;
+          font-family: 'Avenir', 'Arial';
           // outline: rgb(60, 60, 60) solid 2px;
-          color: rgb(53, 53, 53);
+          // color: rgb(0, 0, 0);
+          color: white;
           @media all and (max-width: 650px) {
             text-align: left;
-            font-size: 1em;
+            font-size: 1.1em;
             line-height: 1.6em;
           }
         }
@@ -102,12 +113,16 @@ section#about {
         justify-content: center;
         width: 100%;
         height: 100%;
+
+        @media all and (max-width: 650px) {
+          justify-content: flex-start;
+        }
       }
 
       .AboutMe-image-container > img {
         width: 65%;
         height: 76%;
-        border-radius: 50%;
+        border-radius: 10%;
         border: 1px solid white;
         object-fit: cover;
         @media all and (max-width: 1000px) {
@@ -128,9 +143,8 @@ section#about {
           width: 67%;
         }
         @media all and (max-width: 650px) {
-          height: 30%;
-          width: 40%;
-          border-radius: 10%;
+          height: 90%;
+          width: 60%;
         }
       }
     }
@@ -319,7 +333,7 @@ section#about {
   .dot-buttons {
     width: 100%;
     height: auto;
-    margin-top: 2.2em;
+    margin-top: 1em;
     @include flexContainer(row);
     justify-content: space-evenly;
     @media all and (max-width: 900px) {
@@ -332,8 +346,9 @@ section#about {
       background-color: transparent;
       .dots-icons {
         font-size: 3em;
+        color: white;
         &:hover {
-          color: white;
+          color: rgb(62, 62, 62);
         }
         @media all and (max-width: 450px) {
           font-size: 2.1em;

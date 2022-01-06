@@ -222,9 +222,9 @@
   padding: 0.5em;
 }
 
-@media all and (max-width: 440px) {
+@media all and (max-width: 540px) {
   .home-text-list {
-    width: 50%;
+    width: 53%;
   }
 }
 
@@ -244,6 +244,12 @@
   margin-bottom: 0.5em;
   font-size: 1.2em;
   letter-spacing: 0.1em;
+}
+
+@media all and (max-width: 650px) {
+  .home-li {
+    text-align: right;
+  }
 }
 
 .home-icon-container {
@@ -266,6 +272,15 @@
   width: 40%;
   height: 300px;
   padding-top: 2.5em;
+}
+
+@media all and (max-width: 650px) {
+  .home-icon-container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 36%;
+  }
 }
 
 .home-icon-container .home-icon-minis {
