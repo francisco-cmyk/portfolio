@@ -12,7 +12,7 @@ const storage = [
     {
       name: 'Munch Hunt',
       bio: 'Restaurant Picker Web App',
-      repo_url: 'https://github.com/MunchHunt/restaurantPicker',
+      repo_url: 'https://github.com/MunchHunt/munchhunt',
       dep_url: 'https://munchhunt.netlify.app/',
       image: 'https://i.imgur.com/iT1K3lk.png',
       tech: 'Typescript, React, Next.js, Material UI, AstraDB'
