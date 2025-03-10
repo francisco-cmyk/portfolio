@@ -136,13 +136,13 @@ export default function Portfolio() {
                 View My Work
               </Button>
               <Button variant='outline' size='lg' asChild>
-                <Link
-                  to='/Francisco_Vera_Nicola_Resume.pdf'
+                <a
+                  href='/Francisco_Vera_Nicola_Resume.pdf'
                   download
                   className='md:text-base text-sm'
                 >
                   <Download className='mr-2 h-4 w-4' /> Download Resume
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
@@ -280,13 +280,13 @@ export default function Portfolio() {
             </div>
             <div className='text-center mt-12'>
               <Button asChild size='lg'>
-                <Link
-                  to='/Francisco_Vera_Nicola_Resume.pdf'
+                <a
+                  href='/Francisco_Vera_Nicola_Resume.pdf'
                   download
                   className='md:text-base text-sm'
                 >
                   <Download className='mr-2 h-4 w-4' /> Download Full Resume
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
