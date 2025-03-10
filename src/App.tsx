@@ -1,11 +1,15 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Portfolio from "./Portfolio";
+import { ThemeProvider } from "./context/theme";
 
 function App() {
   return (
-    <>
-      <Portfolio />
-    </>
+    <BrowserRouter>
+      <ThemeProvider>
+        <Portfolio />
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 
