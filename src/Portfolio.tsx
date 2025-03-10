@@ -101,9 +101,6 @@ export default function Portfolio() {
               icon={<Mail className='h-4 w-4' />}
               label='Email'
             />
-            <Button asChild>
-              <Link to='#contact'>Contact Me</Link>
-            </Button>
             <Button
               size='icon'
               variant='ghost'
